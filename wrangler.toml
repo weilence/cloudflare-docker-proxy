@@ -1,5 +1,14 @@
 name = "cloudflare-docker-proxy"
 workers_dev = false
+routes = [
+  { pattern = "docker.weilence.com", custom_domain = true },
+  { pattern = "quay.weilence.com", custom_domain = true },
+  { pattern = "gcr.weilence.com", custom_domain = true },
+  { pattern = "k8s-gcr.weilence.com", custom_domain = true },
+  { pattern = "k8s.weilence.com", custom_domain = true },
+  { pattern = "ghcr.weilence.com", custom_domain = true },
+  { pattern = "cloudsmith.weilence.com", custom_domain = true },
+]
 main = "src/index.js"
 compatibility_date = "2021-12-07"
 
