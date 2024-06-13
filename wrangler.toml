@@ -1,5 +1,5 @@
 name = "cloudflare-docker-proxy"
-workers_dev = true
+workers_dev = false
 main = "src/index.js"
 compatibility_date = "2021-12-07"
 
